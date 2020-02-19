@@ -8,5 +8,4 @@ Deny from All
 
 <If "%{THE_REQUEST} =~ m#^POST /RPC2#">
         Allow from All
-        Satisfy Any
 </If>
