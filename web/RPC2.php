@@ -40,6 +40,7 @@ if (isset($_SERVER['PHP_AUTH_USER'])) {
     </methodResponse>
     ";
     } elseif ($request == 'GetUserlogin') {
+        $user = $_SERVER["PHP_AUTH_PW"];
         $user = base64_decode($user);
 echo "<?xml version='1.0'?>
 <methodResponse>
