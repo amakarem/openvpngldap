@@ -54,9 +54,9 @@ cipher AES-256-CBC
 # Note: this config file contains inline private keys
 #       and therefore should be kept confidential!
 # Note: this configuration is user-locked to the username below
-# OVPN_ACCESS_SERVER_USERNAME=ahmed.e
+# OVPN_ACCESS_SERVER_USERNAME=$user
 # Define the profile name of this particular configuration file
-# OVPN_ACCESS_SERVER_PROFILE=ahmed.e@$server
+# OVPN_ACCESS_SERVER_PROFILE=$user@$server
 # OVPN_ACCESS_SERVER_CLI_PREF_ALLOW_WEB_IMPORT=True
 # OVPN_ACCESS_SERVER_CLI_PREF_BASIC_CLIENT=False
 # OVPN_ACCESS_SERVER_CLI_PREF_ENABLE_CONNECT=False
