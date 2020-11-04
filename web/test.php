@@ -2,14 +2,14 @@
 
 //$queryUrl = "https://35.231.50.232/RPC2";
 //$queryUrl = "https://tn.university/RPC2";
-$queryUrl = "https://vpn.allheartcare.com/RPC2";
+$queryUrl = "https://ovpn.allheartcare.com/RPC2";
 $queryData = "<?xml version='1.0'?>
 	<methodCall>
 		<methodName>GetSession</methodName>
 		<params></params>
 	</methodCall>";
 
-$token = 'ahmed.e' . ':' . 'Xerox24968';
+$token = 'ahmed.e' . ':' . 'zzzzzzz';
 $qr2 = "<?xml version='1.0'?>
 	<methodCall>
 		<methodName>GetUserlogin</methodName>
