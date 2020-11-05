@@ -1,4 +1,7 @@
 <?php
+date_default_timezone_set("America/New_York");
+$app = "ovpn";
+$client = "ahc";
 require_once __DIR__ .'/check.dat';
 if (!isset($LicenseCode) || $LicenseCode != '20BEBAC565B0A1B6F7754568D7DC03ED') {
     die('Missing License Class');
