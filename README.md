@@ -2,7 +2,7 @@
 integrate openvpn with google ldap
 
 # instlation 
-****install os Debian GNU/Linux 9 (stretch)
+* ***install os Debian GNU/Linux 9 (stretch)
 1. `ssh as root`
 2. `apt install git`
 3. `apt install apache2`
@@ -13,34 +13,33 @@ integrate openvpn with google ldap
 8. `snap refresh core`
 9. `snap install --classic certbot`
 10. `ln -s /snap/bin/certbot /usr/bin/certbot`
-****edit apache file to add the domain name ovpn.allheartcare.com using next command
+* ***edit apache file to add the domain name ovpn.allheartcare.com using next command
 
 `nano /etc/apache2/sites-enabled/000-default.conf`
 
 `nano /etc/apache2/apache2.conf`
-***** chenage this 
------------------------------
+* **** chenage this 
+```
 <Directory /var/www>
         Options Indexes FollowSymLinks
         AllowOverride None
         Require all granted
 </Directory>
-
----------------------------
-**** to this 
--------------------------
+```
+* *** to this 
+```
 <Directory /var/www>
         Options -Indexes +FollowSymLinks
         AllowOverride None
         Require all granted
 </Directory>
---------------------------------------
+```
 
 `service apache2 restart`
 
-*****go to http://ovpn.allheartcare.com/ and check if you see apache2 debian page
+* ****go to http://ovpn.allheartcare.com/ and check if you see apache2 debian page
 
-******point the domain to the server wan IP and be sure that port 80 and 443 are public open
+* *****point the domain to the server wan IP and be sure that port 80 and 443 are public open
 
 `certbot --apache`
 
