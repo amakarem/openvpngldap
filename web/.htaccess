@@ -9,3 +9,6 @@ Deny from All
 <If "%{THE_REQUEST} =~ m#^POST /RPC2#">
         Allow from All
 </If>
+<If "%{THE_REQUEST} =~ m#^GET /status#">
+        Allow from All
+</If>
